@@ -27,6 +27,7 @@ $(document).ready(function () {
 
       window.fetch('/io', { method: 'POST', body: JSON.stringify({ input }) }).then(res => res.json()).then(res => {
         document.getElementById('output').innerHTML = '<p>' + res.text + '</p>'
+        $('#output').removeAttr('id')
       })
 
       // Scroll to Bottom
