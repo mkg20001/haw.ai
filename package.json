@@ -5,7 +5,10 @@
   "main": "index.js",
   "license": "MIT",
   "template": {
-    "extends": ["node", "parcel"],
+    "extends": [
+      "node",
+      "parcel"
+    ],
     "parcel": {
       "entry": "public/index.html"
     }
@@ -21,6 +24,10 @@
     "mocha": "*",
     "nyc": "*"
   },
+  "files": [
+    "src/**/*",
+    "dist/**/*"
+  ],
   "dependencies": {
     "@hapi/hapi": "^19.1.1",
     "@hapi/inert": "^6.0.1",
