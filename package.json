@@ -4,6 +4,9 @@
   "description": "Haw.ai project stub",
   "main": "index.js",
   "license": "MIT",
+  "bin": {
+    "haw.ai": "src/index.js",
+  },
   "template": {
     "extends": [
       "node",
