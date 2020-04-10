@@ -1,0 +1,23 @@
+{
+  "name": "haw.ai",
+  "version": "0.0.1",
+  "description": "Haw.ai project stub",
+  "main": "index.js",
+  "license": "MIT",
+  "template": {
+    "extends": [
+      "node"
+    ]
+  },
+  "scripts": {
+    "test": "mocha -A",
+    "cov": "nyc mocha"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "nyc": "*"
+  },
+  "dependencies": {
+    "mkgs-tool": "^0.1.6"
+  }
+}
