@@ -5,10 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "template": {
-    "extends": [
-      "node",
-      "parcel"
-    ],
+    "extends": ["node", "parcel"],
     "parcel": {
       "entry": "public/index.html"
     }
@@ -18,8 +15,7 @@
     "cov": "nyc mocha",
     "start": "parcel start public/index.html  ",
     "build": "rm -rf dist && parcel build public/index.html  ",
-    "prepublishOnly": "npm run postpublish && npm run build && mv dist assets",
-    "postpublish": "rm -rf assets"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "mocha": "*",
