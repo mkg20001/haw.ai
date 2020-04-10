@@ -17,7 +17,9 @@
     "test": "mocha -A",
     "cov": "nyc mocha",
     "start": "parcel start public/index.html  ",
-    "build": "parcel build public/index.html  "
+    "build": "rm -rf dist && parcel build public/index.html  ",
+    "prepublishOnly": "npm run postpublish && npm run build && mv dist assets",
+    "postpublish": "rm -rf assets"
   },
   "devDependencies": {
     "mocha": "*",
@@ -29,7 +31,7 @@
     "hapi-pino": "^7.0.0",
     "hapi-spa-serve": "^0.1.1",
     "jquery": "^3.5.0",
-    "mkgs-tool": "^0.1.6",
+    "mkgs-tool": "^0.1.7",
     "parcel": "^1.12.4"
   }
 }
