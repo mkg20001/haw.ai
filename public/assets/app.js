@@ -25,7 +25,7 @@ $(document).ready(function () {
       // Input-Feld zurücksetzen
       $('input#userInput').val('')
 
-      window.fetch('/io', { method: 'POST', body: JSON.stringify({ input }) }).then(res => res.json()).then(res => {
+      window.fetch('/io', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ input }) }).then(res => res.json()).then(res => {
         document.getElementById('output').innerHTML = '<p>' + res.text + '</p>'
         $('#output').removeAttr('id')
       })
