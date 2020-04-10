@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "haw.ai": "src/index.js",
+    "haw.ai": "src/index.js"
   },
   "template": {
     "extends": [
