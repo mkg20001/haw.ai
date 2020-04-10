@@ -1,0 +1,126 @@
+.mainframe {
+  height: 8em;
+  right: 100px;
+  top: 120px;
+  margin-left: -4em;
+  margin-top: -4em;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  position: fixed;
+  width: 8em;
+}
+
+cube {
+  -webkit-animation: 23s spin linear infinite;
+          animation: 23s spin linear infinite;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 100%;
+}
+
+cube * {
+  background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0) 0px, rgba(0, 255, 0, 0.5) 0%, rgba(0, 255, 0, 0.5) 3px, rgba(0, 0, 0, 0) 0px), -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0) 0px, rgba(0, 255, 0, 0.5) 0%, rgba(0, 255, 0, 0.5) 3px, rgba(0, 0, 0, 0) 0px);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0px, rgba(0, 255, 0, 0.5) 0%, rgba(0, 255, 0, 0.5) 3px, rgba(0, 0, 0, 0) 0px), linear-gradient(90deg, rgba(0, 0, 0, 0) 0px, rgba(0, 255, 0, 0.5) 0%, rgba(0, 255, 0, 0.5) 3px, rgba(0, 0, 0, 0) 0px);
+  background-size: 1em 1em, 1em 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 255, 0, 0.5);
+  box-shadow: 0 0 2em rgba(0, 128, 0, 0.4);
+  display: block;
+  height: 8em;
+  position: absolute;
+  width: 8em;
+}
+cube *:before {
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0) 30%, rgba(0, 128, 0, 0.2) 100%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 30%, rgba(0, 128, 0, 0.2) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+back {
+  -webkit-transform: rotateX(180deg) translateZ(4em);
+          transform: rotateX(180deg) translateZ(4em);
+}
+
+bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(4em);
+          transform: rotateX(-90deg) translateZ(4em);
+}
+
+front {
+  -webkit-transform: rotateY(0deg) translateZ(4em);
+          transform: rotateY(0deg) translateZ(4em);
+}
+
+left {
+  -webkit-transform: rotateY(-90deg) translateZ(4em);
+          transform: rotateY(-90deg) translateZ(4em);
+}
+
+right {
+  -webkit-transform: rotateY(90deg) translateZ(4em);
+          transform: rotateY(90deg) translateZ(4em);
+}
+
+top {
+  -webkit-transform: rotateX(90deg) translateZ(4em);
+          transform: rotateX(90deg) translateZ(4em);
+}
+
+@-webkit-keyframes background {
+  to {
+    background-size: 8em 8em, 8em 8em;
+  }
+}
+
+@keyframes background {
+  to {
+    background-size: 8em 8em, 8em 8em;
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: translateZ(-4em) rotateX(0) rotateY(0deg);
+            transform: translateZ(-4em) rotateX(0) rotateY(0deg);
+  }
+  to {
+    -webkit-transform: translateZ(-4em) rotateX(360deg) rotateY(360deg);
+            transform: translateZ(-4em) rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: translateZ(-4em) rotateX(0) rotateY(0deg);
+            transform: translateZ(-4em) rotateX(0) rotateY(0deg);
+  }
+  to {
+    -webkit-transform: translateZ(-4em) rotateX(360deg) rotateY(360deg);
+            transform: translateZ(-4em) rotateX(360deg) rotateY(360deg);
+  }
+}
+
+/*
+     FILE ARCHIVED ON 17:44:58 Sep 05, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:24:17 Apr 10, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.resolve: 340.002 (2)
+  RedisCDXSource: 3.364
+  exclusion.robots: 0.177
+  CDXLines.iter: 12.082 (3)
+  exclusion.robots.policy: 0.166
+  load_resource: 45.203
+  LoadShardBlock: 1495.897 (3)
+  PetaboxLoader3.datanode: 1192.564 (4)
+  captures_list: 1514.454
+  esindex: 0.014
+*/
