@@ -1,6 +1,6 @@
 /* CSS Document */
 
-@import url(https://web.archive.org/web/20150905174457cs_/http://fonts.googleapis.com/css?family=Play:400,700);
+@import url(https://fonts.googleapis.com/css?family=Play:400,700);
 
 * {
 margin:0;
@@ -34,7 +34,7 @@ padding-top:10px;
 
 }
 
-p#output::before { 
+p#output::before {
     content: "$MASCHINE: Daten laden...";
     animation: blink 0.1s steps(5, start) infinite;
     -webkit-animation: blink 0.1s steps(5, start) infinite;
@@ -94,7 +94,7 @@ hr {display:none;}
 }
 
 label {
-    display: inline-block; 
+    display: inline-block;
 }
 
 /* Markierter Text */
@@ -106,14 +106,6 @@ label {
   background: #ffb7b7; /* Gecko Browsers */
 }
 
-/*
-     FILE ARCHIVED ON 17:44:57 Sep 05, 2015 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 20:24:16 Apr 10, 2020.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
 /*
 playback timings (ms):
   esindex: 0.014

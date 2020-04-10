@@ -28,6 +28,7 @@
     "@hapi/inert": "^6.0.1",
     "hapi-pino": "^7.0.0",
     "hapi-spa-serve": "^0.1.1",
+    "jquery": "^3.5.0",
     "mkgs-tool": "^0.1.6",
     "parcel": "^1.12.4"
   }
